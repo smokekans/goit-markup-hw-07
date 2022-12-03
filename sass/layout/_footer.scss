@@ -1,0 +1,106 @@
+.page-footer {
+    background-color: var(--special-background-color);
+    padding: 60px 0;
+}
+
+.footer__title {
+    margin-bottom: 20px;
+
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer--contact__list {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.footer--contact__link {
+    display: block;
+    color: var(--contact-text-color);
+    text-decoration: none;
+    margin-top: 9px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer--contact__link:focus,
+.footer--contact__link:hover {
+    color: var(--accent-text-color);
+    outline: transparent;
+}
+
+
+.footer--join__list {
+    display: inline-flex;
+    gap: 10px;
+    fill: var(--primary-text-color);
+}
+
+.footer--join__item {
+    color: var(--primary-text-color);
+}
+
+.footer--join__social--link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-text-color);
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer--join__social--link:hover,
+.footer--join__social--link:focus {
+    background-color: var(--accent-text-color);
+    outline: transparent;
+}
+
+.footer--join__social--icon {
+    fill: currentColor;
+}
+
+
+.footer--form__input {
+    padding: 15px 16px;
+
+    width: 358px;
+    height: 50px;
+
+    color: var(--primary-text-color);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer--form__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--accent-text-color);
+    color: var(--primary-text-color);
+
+    height: 50px;
+    width: 200px;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer--form__button:hover,
+.footer--form__button:focus {
+    background-color: #188CE8;
+
+}
+
+.footer--form__icon {
+    margin-left: 10px;
+}

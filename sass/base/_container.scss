@@ -1,0 +1,37 @@
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.container-footer {
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.container__footer--contact {
+    margin-right: 70px;
+}
+
+.container__footer--join {
+    margin-right: auto;
+}
+
+.container__footer--form {
+    display: inline-flex;
+    gap: 12px;
+}
