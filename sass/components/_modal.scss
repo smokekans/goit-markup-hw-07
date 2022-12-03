@@ -28,6 +28,11 @@
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    
+    &:hover,
+    &:focus {
+    fill: var(--accent-text-color);
+    }
 }
 
 .modal__icon--close {
@@ -36,11 +41,6 @@
     justify-content: center;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__button--close:hover,
-.modal__button--close:focus {
-    fill: var(--accent-text-color);
 }
 
 .form__title {
@@ -67,6 +67,10 @@
 
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .form-field__input:focus+& {
+    fill: var(--accent-text-color);
+}
 }
 
 .form-field__label {
@@ -93,14 +97,10 @@
     width: 100%;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-field__input:focus {
+    &:focus {
     border-color: var(--accent-text-color);
-}
-
-.form-field__input:focus+.form-field__icon {
-    fill: var(--accent-text-color);
+    }
 }
 
 .form-field__comment {
@@ -116,20 +116,16 @@
     outline: none;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-field__comment:focus {
+    &:focus {
     border-color: var(--accent-text-color);
+}
 }
 
 .form-field__checkbox {
     margin: 20px auto 30px;
 
     text-align: center;
-}
-
-.form-field__checkbox .checkbox__icon-check {
-    fill: var(--accent-text-color);
 }
 
 .checkbox__label {
@@ -148,11 +144,6 @@
     appearance: none;
 }
 
-.checkbox__input:checked+.checkbox__icon-check {
-    background-color: var(--accent-text-color);
-    border: none;
-}
-
 .checkbox__icon-check {
     margin-right: 7px;
     cursor: pointer;
@@ -160,6 +151,12 @@
     border: 1px solid var(--title-text-color);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--accent-text-color);
+
+    .checkbox__input:checked+& {
+    background-color: var(--accent-text-color);
+    border: none;
+}
 }
 
 .checkbox__link {
@@ -175,9 +172,10 @@
     color: var(--primary-text-color);
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form__button:hover,
-.form__button:focus {
+    &:hover,
+    &:focus {
     background-color: #188CE8;
 }
+}
+
